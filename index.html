@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 50%;
+        }
+        main {
+            width: min-content;
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center">
+    <div class="main card p-4">
+        <h1 class="text-center">Passenger Counter</h1>
+        <h3 class="text-center">Number of passengers:</h3>
+        <h2 class="text-center" id="passengers">0</h2>
+        <h4 class="text-center" id="passenger_sets"></h4>
+        <button class="btn btn-primary my-1" onClick="increment()">Increment</button>
+        <button class="btn btn-success my-1" onClick="save()">Save</button>
+        <button class="btn btn-danger my-1" onClick="reset()">Reset</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
